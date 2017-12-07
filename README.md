@@ -1,16 +1,16 @@
 # ABOUT
 
-Pedro Arilla's  scripts for [Glyphs app](http://glyphsapp.com/).
-
+[Pedro Arilla](http://pedroarilla.com)'s scripts for [Glyphs app](http://glyphsapp.com/).
 
 # INSTALLATION
 
-Put the scripts into the *Scripts* folder which appears when you choose *Open Scripts Folder* from the *Scripts* menu. After installation, either choose Refresh Script Menu (Option+Shift+Command+Y) or restart the application.
+Choose *Open Scripts Folder* (Cmd-Shift-Y) in the *Script* menu in Glyphs. A folder called *Scripts* appears in a new Finder window. Put the scripts into this folder. Go back to Glyphs, go to the *Script* menu, hold down the Option (Alt) key, and choose *Reload Scripts* (Cmd-Opt-Shift-Y). Yeah! Now you can see and use the scripts from the *Script* menu.
 
-For some scripts, you will also need to install Tal Leming's *Vanilla* and may need to install other modules. In Glyphs 2, you can install them from Preferences > Addons.
+Please, visit http://www.glyphsapp.com/ for further information.
 
 # ABOUT THE SCRIPTS
-* **Delete all annotations:** Delete all annotations on all layers.
+* **Delete all annotations:** Deletes all annotations on all layers (masters and copies) on all glyphs.
+* **Duplicate current layer:** Duplicates the current layer as a normal glyph layer.
 * **New tabs with KernKing text:** Opens two new edit tabs and outputs KernKing text.
 
 # License
