@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
 __doc__="""
-Deletes all annotations on all layers (masters and copies) on all glyphs
+Deletes all annotations on all layers (masters and copies) on all glyphs.
 """
 
 import GlyphsApp
@@ -16,4 +16,5 @@ for glyph in thisFont.glyphs:
             annotationCounter += 1
 
 Glyphs.clearLog()
+Glyphs.showMacroWindow()
 print "%i annotations deleted." % annotationCounter

@@ -2,7 +2,10 @@
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
 __doc__="""
-Duplicates the current layer as a normal glyph layer
+Duplicates the current layer as a normal glyph layer.
+
+Recommended keyboard shortcut: Cmd+Shift+D
+[via Mac OS System Preferences > Keyboard > Shortcuts > App Shortcuts > Glyphs.app]
 """
 
 import GlyphsApp

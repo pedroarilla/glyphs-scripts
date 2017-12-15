@@ -1,9 +1,9 @@
 #MenuTitle: New tabs with KernKing text
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
-# KernKing: http://logofontandlettering.com/kernking.html
+# Thanks to KernKing: http://logofontandlettering.com/kernking.html
 __doc__="""
-Opens two new edit tabs and outputs KernKing text
+Opens two new edit tabs and outputs KernKing text.
 """
 
 import GlyphsApp
@@ -14,3 +14,6 @@ part2 = "Aaron Abraham Adam Aeneas Agfa Ahoy Aileen Akbar Alanon Americanism Ang
 
 callAfter( Glyphs.currentDocument.windowController().addTabWithString_, part1 )
 callAfter( Glyphs.currentDocument.windowController().addTabWithString_, part2 )
+
+Glyphs.clearLog()
+print "KernKing tabs opened."
