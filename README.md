@@ -4,7 +4,7 @@
 
 # INSTALLATION
 
-Choose *Open Scripts Folder* (Cmd-Shift-Y) in the *Script* menu in Glyphs. A folder called *Scripts* will appear in a new Finder window. Put the scripts into this folder. Go back to Glyphs, go to the *Script* menu, hold down the Option (Alt) key, and choose *Reload Scripts* (Cmd-Opt-Shift-Y). Yeah! Now you can see and use the scripts from the *Script* menu.
+Choose *Open Scripts Folder* (Cmd+Shift+Y) in the *Script* menu in Glyphs. A folder called *Scripts* will appear in a new Finder window. Put the scripts into this folder. Go back to Glyphs, go to the *Script* menu, hold down the Option (Alt) key, and choose *Reload Scripts* (Cmd+Opt+Shift+Y). Yeah! Now you can see and use the scripts from the *Script* menu.
 
 Please, visit http://www.glyphsapp.com/ for further information.
 
