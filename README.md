@@ -12,7 +12,7 @@ Please, visit http://www.glyphsapp.com/ for further information.
 * **Delete all annotations:** Deletes all annotations on all layers (masters and copies) on all glyphs.
 * **Duplicate current layer:** Duplicates the current layer as a normal glyph layer.
 * **New tabs with KernKing text:** Opens two new edit tabs and outputs KernKing text.
-* **Selection to global background:** Replaces on all the glyphs the current content of the background with the selected paths.
+* **Selection to all the backgrounds:** Replaces on all the glyphs their current content of the background with the selected paths on the current glyph.
 * **Tabular width checker:** Checks all selected Glyphs are on same width. It ignores ‘Auto’ and makes sure that the assigned value is equal regardless of metrics keys.
 
 # License
