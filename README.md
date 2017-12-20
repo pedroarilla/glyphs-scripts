@@ -10,6 +10,8 @@ Please, visit http://www.glyphsapp.com/ for further information.
 
 # ABOUT THE SCRIPTS
 * **Delete all annotations:** Deletes all annotations on all layers (masters and copies) on all glyphs.
+* **Display next layer:** Switches to the next layer of the current glyph (by @mekkablue).
+* **Display previous layer:** Switches to the previous layer of the current glyph (by @mekkablue).
 * **Duplicate current layer:** Duplicates the current layer as a normal glyph layer.
 * **New tabs with KernKing text:** Opens two new edit tabs and outputs KernKing text.
 * **Selection to all the backgrounds:** Replaces on all the glyphs their current content of the background with the selected paths on the current glyph.
