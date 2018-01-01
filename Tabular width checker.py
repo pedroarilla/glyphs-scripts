@@ -13,20 +13,20 @@ selectedLayers = thisFont.selectedLayers
 masterWidth = selectedLayers[0].width
 sameWidthCounter = 0
 differentWidthCounter = 0
+yep = "\U00002705"
+nope = "\U0000274C"
 
 Glyphs.clearLog()
 Glyphs.showMacroWindow()
 print "Processing..."
-
 for thisLayer in selectedLayers:
 	width = thisLayer.width
 	if width == masterWidth:
-		print "+++" + thisLayer.parent.name + ": Yep! (%i)" % width
+		print "\t" + yep.decode('unicode-escape') + " " + thisLayer.parent.name + " (%i)" % width
 		sameWidthCounter += 1
 	else:
-		print "---" + thisLayer.parent.name + ": Nope! (%i)" % width
+		print "\t" + nope.decode('unicode-escape') + " " + thisLayer.parent.name + " (%i)" % width
 		differentWidthCounter += 1
-
 print "Result:"
 print "%i glyphs are on same width." % sameWidthCounter
 print "%i glyphs are on different width." % differentWidthCounter
