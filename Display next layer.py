@@ -1,9 +1,7 @@
 #MenuTitle: Display next layer
 # -*- coding: utf-8 -*-
-# by Rainer Erich Scheichelbauer (@mekkablue)
+# slightly adapted by Pedro Arilla from a @mekkablue's (Rainer Erich Scheichelbauer) snippet
 # source: https://forum.glyphsapp.com/t/keyboard-shortcuts-for-the-layers-palette/6578/2
-# slightly adapted by Pedro Arilla
-
 __doc__="""
 Switches to the next layer of the current glyph.
 
