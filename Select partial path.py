@@ -9,12 +9,14 @@ Recommended keyboard shortcut: Cmd+Ctrl+A
 """
 
 import GlyphsApp
+import time
 Glyphs.clearLog()
+print "Select partial path @ " + time.strftime("%H:%M:%S")
+
 thisFont = Glyphs.font
 currentLayer = thisFont.selectedLayers[0]
 currentGlyph = currentLayer.parent
 partialPath = False
-
 thisFont.disableUpdateInterface()
 currentGlyph.beginUndo()
 for path in currentLayer.paths:

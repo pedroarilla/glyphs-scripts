@@ -8,16 +8,17 @@ Note: The glyph selected firstly sets the *master width*.
 """
 
 import GlyphsApp
-thisFont = Glyphs.font
+import time
+Glyphs.clearLog()
+Glyphs.showMacroWindow()
+print "Tabular width checker @ " + time.strftime("%H:%M:%S")
+
 selectedLayers = thisFont.selectedLayers
 masterWidth = selectedLayers[0].width
 sameWidthCounter = 0
 differentWidthCounter = 0
 yep = "\U00002705"
 nope = "\U0000274C"
-
-Glyphs.clearLog()
-Glyphs.showMacroWindow()
 print "Processing..."
 for layer in selectedLayers:
 	width = layer.width

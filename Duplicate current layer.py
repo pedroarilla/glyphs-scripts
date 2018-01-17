@@ -10,6 +10,8 @@ Recommended keyboard shortcut: Cmd+Shift+D
 
 import GlyphsApp
 import time
+Glyphs.clearLog()
+print "Duplicate current layer @ " + time.strftime("%H:%M:%S")
 
 thisFont = Glyphs.font
 currentLayer = thisFont.selectedLayers[0]
@@ -18,5 +20,4 @@ newLayer = currentLayer.copy()
 newLayer.name = '@ '+ time.strftime("%H:%M, %d/%m/%y")
 thisFont.glyphs[currentGlyph.name].layers.append(newLayer)
 
-Glyphs.clearLog()
 print "Layer duplicated."

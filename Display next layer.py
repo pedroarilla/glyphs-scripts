@@ -10,9 +10,12 @@ Recommended keyboard shortcut: Ctrl+DownArrow
 """
 
 import GlyphsApp
+import time
+Glyphs.clearLog()
+print "Display next layer @ " + time.strftime("%H:%M:%S")
+
 thisFont = Glyphs.font
 currentTab = thisFont.currentTab
-
 if thisFont and currentTab:
 	currentLayer = currentTab.activeLayer()
 	if currentLayer:
@@ -27,5 +30,4 @@ if thisFont and currentTab:
 		newLayers.pop(offset+1)
 		currentTab.layers = newLayers
 
-Glyphs.clearLog()
 print "Next layer active."

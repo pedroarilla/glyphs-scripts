@@ -7,7 +7,9 @@ Finds and selects small paths (smaller than a user-definable area) in the curren
 
 import GlyphsApp
 from robofab.interface.all.dialogs import AskString
+import time
 Glyphs.clearLog()
+print "Select small paths @ " + time.strftime("%H:%M:%S")
 
 def is_a_number(number):
     try:
