@@ -19,13 +19,13 @@ nope = "\U0000274C"
 Glyphs.clearLog()
 Glyphs.showMacroWindow()
 print "Processing..."
-for thisLayer in selectedLayers:
-	width = thisLayer.width
+for layer in selectedLayers:
+	width = layer.width
 	if width == masterWidth:
-		print "\t" + yep.decode('unicode-escape') + " " + thisLayer.parent.name + " (%i)" % width
+		print "\t" + yep.decode('unicode-escape') + " " + layer.parent.name + " (%i)" % width
 		sameWidthCounter += 1
 	else:
-		print "\t" + nope.decode('unicode-escape') + " " + thisLayer.parent.name + " (%i)" % width
+		print "\t" + nope.decode('unicode-escape') + " " + layer.parent.name + " (%i)" % width
 		differentWidthCounter += 1
 print "Result:"
 print "%i glyphs are on same width." % sameWidthCounter

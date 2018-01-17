@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
 __doc__="""
-Deletes all annotations on all layers (masters and copies) on all glyphs.
+Deletes all annotations in all layers (masters and copies) in all glyphs.
 """
 
 import GlyphsApp

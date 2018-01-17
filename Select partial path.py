@@ -17,13 +17,13 @@ partialPath = False
 
 thisFont.disableUpdateInterface()
 currentGlyph.beginUndo()
-for thisPath in currentLayer.paths:
-    for thisNode in thisPath.nodes:
-        if thisNode.selected:
-            currentLayer.addSelection_(thisNode)
+for path in currentLayer.paths:
+    for node in path.nodes:
+        if node.selected:
+            currentLayer.addSelection_(node)
             partialPath = not partialPath
         elif partialPath:
-            currentLayer.addSelection_(thisNode)
+            currentLayer.addSelection_(node)
 currentGlyph.endUndo()
 thisFont.enableUpdateInterface()
 
