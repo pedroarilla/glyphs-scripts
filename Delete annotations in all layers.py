@@ -1,4 +1,4 @@
-#MenuTitle: Delete all annotations
+#MenuTitle: Delete annotations in all layers
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
 __doc__="""
@@ -8,7 +8,7 @@ Deletes all annotations in all layers (masters and copies) in all glyphs.
 import GlyphsApp
 import time
 Glyphs.clearLog()
-print "Delete all annotations @ " + time.strftime("%H:%M:%S")
+print "Delete annotations in all layers @ " + time.strftime("%H:%M:%S")
 
 thisFont = Glyphs.font
 annotationCounter = 0

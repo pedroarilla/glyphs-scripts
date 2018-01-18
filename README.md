@@ -9,7 +9,10 @@ Choose *Open Scripts Folder* (Cmd+Shift+Y) in the *Script* menu in Glyphs. A fol
 Please, visit http://www.glyphsapp.com/ for further information.
 
 # ABOUT THE SCRIPTS
-* **Delete all annotations:** Deletes all annotations in all layers (masters and copies) in all glyphs.
+* **Clear background in all layers:** Clears the background in all layers (masters and copies) in all glyphs.
+* **Clear background in all master layers:** Clears the background in all master layers in all glyphs.
+* **Delete annotations in all layers:** Deletes all annotations in all layers (masters and copies) in all glyphs.
+* **Delete annotations in all master layers:** Deletes all annotations in all master layers in all glyphs.
 * **Display next layer:** Switches to the next layer of the current glyph (by @mekkablue).
 * **Display previous layer:** Switches to the previous layer of the current glyph (by @mekkablue).
 * **Duplicate current layer:** Duplicates the current layer as a normal glyph layer.
