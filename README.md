@@ -17,6 +17,7 @@ Please, visit http://www.glyphsapp.com/ for further information.
 * **Display previous layer:** Switches to the previous layer of the current glyph (by @mekkablue).
 * **Duplicate current layer:** Duplicates the current layer as a normal glyph layer.
 * **New tabs with KernKing text:** Opens two new edit tabs and outputs KernKing text.
+* **Scale background in selected glyphs:** Scale proportionally (user-definable percentage) the background content in selected glyphs.
 * **Select partial path:** Selects the partial path between the selected nodes in the current glyph — take into account that the script goes through the path starting from the first node.
 * **Select small paths:** Finds and selects small paths (smaller than a user-definable area) in the current glyph.
 * **Selection to all the backgrounds:** Replaces in all the glyphs their current content of the background with the selected paths in the current glyph.
