@@ -19,7 +19,6 @@ sameWidthCounter = 0
 differentWidthCounter = 0
 yep = "\U00002705"
 nope = "\U0000274C"
-print "Processing..."
 for layer in selectedLayers:
 	width = layer.width
 	if width == masterWidth:
