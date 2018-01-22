@@ -13,6 +13,7 @@ Glyphs.clearLog()
 Glyphs.showMacroWindow()
 print "Tabular width checker @ " + time.strftime("%H:%M:%S")
 
+thisFont = Glyphs.font
 selectedLayers = thisFont.selectedLayers
 masterWidth = selectedLayers[0].width
 sameWidthCounter = 0
