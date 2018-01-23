@@ -25,7 +25,6 @@ if not is_a_number(scale):
 else:
     scale = float(scale) * 0.01
     thisFont = Glyphs.font
-    currentLayer = thisFont.selectedLayers[0]
     listOfSelectedLayers = thisFont.selectedLayers
     thisFont.disableUpdateInterface()
     for thisLayer in listOfSelectedLayers:
