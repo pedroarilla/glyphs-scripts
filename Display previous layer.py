@@ -29,12 +29,12 @@ if thisFont and currentTab:
 			if currentLayer.layerId == layer.layerId:
 				currentIndex = i
 			i += 1
-	# switch to next layer
-	nextIndex = (currentIndex-1)%len(layersList)
-	nextLayer = layersList[nextIndex]
-	nextLayerData = NSMutableAttributedString.alloc().init()
+	# switch to previous layer
+	previousIndex = (currentIndex-1)%len(layersList)
+	previousLayer = layersList[previousIndex]
+	previousLayerData = NSMutableAttributedString.alloc().init()
 	glyphUni = thisFont.characterForGlyph_( currentGlyph )
-	tempData = NSAttributedString.alloc().initWithString_attributes_( unichr(glyphUni), { "GSLayerIdAttrib" : nextLayer } )
-	nextLayerData.appendAttributedString_( tempData )
-	currentTab.layers._owner.graphicView().textStorage().setText_(nextLayerData)
-print "Next previous active."
+	tempData = NSAttributedString.alloc().initWithString_attributes_( unichr(glyphUni), { "GSLayerIdAttrib" : previousLayer } )
+	previousLayerData.appendAttributedString_( tempData )
+	currentTab.layers._owner.graphicView().textStorage().setText_(previousLayerData)
+print "Previous layer active."
