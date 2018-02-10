@@ -14,15 +14,15 @@ Please, visit http://www.glyphsapp.com/ for further information.
 * **Decompose all corner components:** Decomposes all corner components in selected glyphs.
 * **Delete annotations in all layers:** Deletes all annotations in all layers (masters and copies) in all glyphs.
 * **Delete annotations in all master layers:** Deletes all annotations in all master layers in all glyphs.
-* **Display next layer:** Switches to the next layer of the current glyph (by @mekkablue).
-* **Display previous layer:** Switches to the previous layer of the current glyph (by @mekkablue).
+* **Display next layer:** Switches to the next layer of the current glyph within the current master.
+* **Display previous layer:** Switches to the previous layer of the current glyph within the current master.
 * **Duplicate current layer:** Duplicates the current layer as a normal glyph layer.
 * **New tabs with KernKing text:** Opens two new edit tabs and outputs KernKing text.
 * **Scale background in selected glyphs:** Scale proportionally (user-definable percentage) the background content in selected glyphs.
 * **Select partial path:** Selects the partial path between the selected nodes in the current glyph — take into account that the script goes through the path starting from the first node.
 * **Select small paths:** Finds and selects small paths (smaller than a user-definable area) in the current glyph.
 * **Selection to all the backgrounds:** Replaces in all the glyphs their current content of the background with the selected paths in the current glyph.
-* **Set default figures:** Sets as default figures the set of numerals selected by the user (UI — Vanilla required). Inserts the figures as components in the ‘Decimal Digit’ cells, enable automatic alignment, and copies kerning groups. 
+* **Set default figures:** Sets as default figures the set of numerals selected by the user (UI — Vanilla required). Inserts the figures as components in the ‘Decimal Digit’ cells, enable automatic alignment, and copies kerning groups.
 * **Tabular width checker:** Checks all selected Glyphs are on same width. It ignores ‘Auto’ and makes sure that the assigned value is equal regardless of metrics keys.
 
 # License
