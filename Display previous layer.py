@@ -20,7 +20,7 @@ if thisFont and currentTab:
 	currentLayer = currentTab.activeLayer()
 	currentMasterId = currentLayer.associatedMasterId
 	currentGlyph = currentLayer.parent
-	# list of layers within the master
+	# find the actual layer-cursor position
 	currentIndex = 0
 	i = 0
 	for layer in currentGlyph.layers:
@@ -29,12 +29,23 @@ if thisFont and currentTab:
 			if currentLayer.layerId == layer.layerId:
 				currentIndex = i
 			i += 1
-	# switch to previous layer
+	# previous layer data
 	previousIndex = (currentIndex-1)%len(layersList)
 	previousLayer = layersList[previousIndex]
-	previousLayerData = NSMutableAttributedString.alloc().init()
-	glyphUni = thisFont.characterForGlyph_( currentGlyph )
-	tempData = NSAttributedString.alloc().initWithString_attributes_( unichr(glyphUni), { "GSLayerIdAttrib" : previousLayer } )
-	previousLayerData.appendAttributedString_( tempData )
-	currentTab.layers._owner.graphicView().textStorage().setText_(previousLayerData)
-print "Previous layer active."
+	# switch to previous layer
+	layers = currentTab.layers.values()
+	string = NSMutableAttributedString.alloc().init()
+	for i in xrange( len( layers ) ):
+		layer = layers[i]
+		try:
+			char = thisFont.characterForGlyph_( layer.parent )
+		except:
+			continue
+		singleChar = NSAttributedString.alloc().initWithString_attributes_( unichr(char), {} )
+		if i == currentTab.layersCursor:
+			singleChar = NSAttributedString.alloc().initWithString_attributes_( unichr(char), { "GSLayerIdAttrib" : previousLayer } )
+		else:
+			singleChar = NSAttributedString.alloc().initWithString_attributes_( unichr(char), { "GSLayerIdAttrib" : layer.layerId } )
+		string.appendAttributedString_( singleChar )
+	currentTab.layers._owner.graphicView().textStorage().setText_(string)
+print "previous layer active."
