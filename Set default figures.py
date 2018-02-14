@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
 __doc__="""
-Sets as default figures the set of numerals selected by the user (UI — Vanilla required). Inserts the figures as components in the ‘Decimal Digit’ cells, enable automatic alignment, and copies kerning groups. 
+Sets as default figures the set of numerals selected by the user (UI — Vanilla required). Inserts the figures as components in the ‘Decimal Digit’ cells, enables automatic alignment, and copies kerning groups. 
 """
 
 import GlyphsApp

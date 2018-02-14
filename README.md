@@ -23,7 +23,7 @@ Please, visit http://www.glyphsapp.com/ for further information.
 * **Select partial path:** Selects the partial path between the selected nodes in the current glyph — take into account that the script goes through the path starting from the first node.
 * **Select small paths:** Finds and selects small paths (smaller than a user-definable area) in the current glyph.
 * **Selection to all the backgrounds:** Replaces in all the glyphs their current content of the background with the selected paths in the current glyph.
-* **Set default figures:** Sets as default figures the set of numerals selected by the user (UI — Vanilla required). Inserts the figures as components in the ‘Decimal Digit’ cells, enable automatic alignment, and copies kerning groups.
+* **Set default figures:** Sets as default figures the set of numerals selected by the user (UI — Vanilla required). Inserts the figures as components in the ‘Decimal Digit’ cells, enables automatic alignment, and copies kerning groups.
 * **Tabular width checker:** Checks all selected Glyphs are on same width. It ignores ‘Auto’ and makes sure that the assigned value is equal regardless of metrics keys.
 
 # License
