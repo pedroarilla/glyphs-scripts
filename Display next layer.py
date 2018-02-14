@@ -20,7 +20,7 @@ if thisFont and currentTab:
 	currentLayer = currentTab.activeLayer()
 	currentMasterId = currentLayer.associatedMasterId
 	currentGlyph = currentLayer.parent
-	# find the actual cursor position
+	# Find the actual cursor position:
 	currentIndex = 0
 	i = 0
 	for layer in currentGlyph.layers:
@@ -29,10 +29,10 @@ if thisFont and currentTab:
 			if currentLayer.layerId == layer.layerId:
 				currentIndex = i
 			i += 1
-	# next layer data
+	# Next layer data:
 	nextIndex = (currentIndex+1)%len(layersList)
 	nextLayer = layersList[nextIndex]
-	# switch to next layer
+	# Switch to next layer:
 	layers = currentTab.layers.values()
 	string = NSMutableAttributedString.alloc().init()
 	for i in xrange( len( layers ) ):

@@ -48,4 +48,4 @@ if thisFont and currentTab:
 			singleChar = NSAttributedString.alloc().initWithString_attributes_( unichr(char), { "GSLayerIdAttrib" : layer.layerId } )
 		string.appendAttributedString_( singleChar )
 	currentTab.layers._owner.graphicView().textStorage().setText_(string)
-print "previous layer active."
+print "Previous layer active."
