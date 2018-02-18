@@ -25,6 +25,7 @@ Please, visit http://www.glyphsapp.com/ for further information.
 * **Selection to all the backgrounds:** Replaces in all the glyphs their current content of the background with the selected paths in the current glyph.
 * **Set default figures:** Sets as default figures the set of numerals selected by the user (UI — Vanilla required). Inserts the figures as components in the ‘Decimal Digit’ cells, enables automatic alignment, and copies kerning groups.
 * **Tabular width checker:** Checks all selected Glyphs are on same width. It ignores ‘Auto’ and makes sure that the assigned value is equal regardless of metrics keys.
+* **Use layer as master:** Sets the current layer as the master layer.
 
 # License
 
