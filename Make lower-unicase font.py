@@ -14,7 +14,7 @@ thisFont = Glyphs.font
 allGlyphs = list(thisFont.glyphs)
 for lowerGlyph in allGlyphs:
 	if lowerGlyph.category == "Letter" and lowerGlyph.subCategory == "Lowercase":
-		upperName = lowerGlyph.name.upper()
+		upperName = lowerGlyph.name.title()
 		print "\tUpper", upperName
 		upperGlyph = thisFont.glyphs[upperName]
 		if not upperGlyph:
