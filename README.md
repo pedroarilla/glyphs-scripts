@@ -18,6 +18,7 @@ Please, visit http://www.glyphsapp.com/ for further information.
 * **Display previous layer:** Switches to the previous layer of the current glyph within the current master.
 * **Duplicate current layer:** Duplicates the current layer as a normal glyph layer.
 * **Make component glyph for all masters:** Builds compound glyphs in the selected ones for all masters.
+* **Make lower-unicase font:** Makes a lower-unicase font placing the lowercase glyphs (as components) in the uppercasse cells.
 * **New tabs with KernKing text:** Opens two new edit tabs and outputs KernKing text.
 * **Scale background in selected glyphs:** Scale proportionally (user-definable percentage) the background content in selected glyphs.
 * **Select partial path:** Selects the partial path between the selected nodes in the current glyph — take into account that the script goes through the path starting from the first node.
