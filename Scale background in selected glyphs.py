@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
 __doc__="""
-Scale proportionally (user-definable percentage) the background content in selected glyphs.
+Scales proportionally (user-definable percentage) the background content in selected glyphs.
 """
 
 import GlyphsApp
