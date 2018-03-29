@@ -25,7 +25,7 @@ Please, visit http://www.glyphsapp.com/ for further information.
 * **Select small paths:** Finds and selects small paths (smaller than a user-definable area) in the current glyph.
 * **Selection to all the backgrounds:** Replaces in all the glyphs their current content of the background with the selected paths in the current glyph.
 * **Set default figures:** Sets as default figures the set of numerals selected by the user (UI — Vanilla required). Inserts the figures as components in the ‘Decimal Digit’ cells, enables automatic alignment, and copies kerning groups.
-* **Shift background in selected glyphs:** Shifts horizontally (user-definable number) the background content in selected glyphs. Positive vale for shifting to the right, negative value for shifting to the left.
+* **Shift background in selected glyphs:** Shifts horizontally (user-definable number) the background content in selected glyphs. Positive value for shifting to the right, negative value for shifting to the left.
 * **Tabular width checker:** Checks all selected Glyphs are on same width. It ignores ‘Auto’ and makes sure that the assigned value is equal regardless of metrics keys.
 * **Use layer as master:** Sets the current layer as the master layer.
 

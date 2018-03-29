@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
 __doc__="""
-Shifts horizontally (user-definable number) the background content in selected glyphs. Positive vale for shifting to the right, negative value for shifting to the left.
+Shifts horizontally (user-definable number) the background content in selected glyphs. Positive value for shifting to the right, negative value for shifting to the left.
 """
 
 import GlyphsApp
