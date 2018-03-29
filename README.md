@@ -20,7 +20,7 @@ Please, visit http://www.glyphsapp.com/ for further information.
 * **Make component glyph for all masters:** Builds compound glyphs in the selected ones for all masters.
 * **Make lower-unicase font:** Makes a lower-unicase font placing the lowercase glyphs (as components) in the uppercasse cells.
 * **New tabs with KernKing text:** Opens two new edit tabs and outputs KernKing text.
-* **Scale background in selected glyphs:** Scale proportionally (user-definable percentage) the background content in selected glyphs.
+* **Scale background in selected glyphs:** Scales proportionally (user-definable percentage) the background content in selected glyphs.
 * **Select partial path:** Selects the partial path between the selected nodes in the current glyph — take into account that the script goes through the path starting from the first node.
 * **Select small paths:** Finds and selects small paths (smaller than a user-definable area) in the current glyph.
 * **Selection to all the backgrounds:** Replaces in all the glyphs their current content of the background with the selected paths in the current glyph.
