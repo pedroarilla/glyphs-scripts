@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
 __doc__="""
-UI for deleting and cleaning anchors, annotations, backgrounds, guidelines, images, kerning groups, labels, metric keys, non-master layers, and paths and components—in selected/all the glyphs, active/all the masters, and master/all the layers.
+UI for deleting anchors, annotations, backgrounds, guidelines, images, kerning groups, labels, metric keys, non-master layers, and paths and components—in selected/all the glyphs, selected/all the masters, and master/all the layers.
 """
 
 import GlyphsApp
@@ -24,7 +24,7 @@ class startFromScratch( object ):
 		)
 
 		# UI elements:
-		self.w.text_1 = vanilla.TextBox( (15, 20*1, -15, 20), "Clean up:", sizeStyle='regular' )
+		self.w.text_1 = vanilla.TextBox( (15, 20*1, -15, 20), "Delete:", sizeStyle='regular' )
 		self.w.cleanAnchors = vanilla.CheckBox( (15, 20*2+10, -15, 20), "Anchors", value=False, callback=self.SavePreferences, sizeStyle='regular' )
 		self.w.cleanAnnotations = vanilla.CheckBox( (15, 20*3+10, -15, 20), "Annotations", value=False, callback=self.SavePreferences, sizeStyle='regular' )
 		self.w.cleanBackgrounds = vanilla.CheckBox( (15, 20*4+10, -15, 20), "Backgrounds", value=False, callback=self.SavePreferences, sizeStyle='regular' )
@@ -40,7 +40,7 @@ class startFromScratch( object ):
 		self.w.applyToGlyphs = vanilla.RadioGroup( (35, 20*14+10, -15, 20*2), ["Only selected glyphs", "All the glyphs in font"], isVertical = True, sizeStyle='regular', callback=self.SavePreferences )
 
 		self.w.text_3 = vanilla.TextBox( (15, 20*17, -15, 20), "Apply to masters:", sizeStyle='regular' )
-		self.w.applyToMasters = vanilla.RadioGroup( (35, 20*18+10, -15, 20*2), ["Only active master", "All the masters"], isVertical = True, sizeStyle='regular', callback=self.SavePreferences )
+		self.w.applyToMasters = vanilla.RadioGroup( (35, 20*18+10, -15, 20*2), ["Only selected master", "All the masters"], isVertical = True, sizeStyle='regular', callback=self.SavePreferences )
 
 		self.w.text_4 = vanilla.TextBox( (15, 20*21, -15, 20), "Apply to layers:", sizeStyle='regular' )
 		self.w.applyToLayers = vanilla.RadioGroup( (35, 20*22+10, -15, 20*2), ["Only master layers", "All the layers"], isVertical = True, sizeStyle='regular', callback=self.SavePreferences )
