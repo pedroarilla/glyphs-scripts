@@ -8,6 +8,8 @@ Choose *Open Scripts Folder* (Cmd+Shift+Y) in the *Script* menu in Glyphs. A fol
 
 Please, visit http://www.glyphsapp.com/ for further information.
 
+PS, Some of the scripts require @typesupply's Vanilla. No worries, it’s easy: go to the *Glyphs* menu, *Preferences*, *Addons*, *Modules*, and finally click on  *Install Modules*. Done!
+
 # ABOUT THE SCRIPTS
 * **Clear background in all layers:** Clears the background in all layers (masters and copies) in all glyphs.
 * **Clear background in all master layers:** Clears the background in all master layers in all glyphs.
@@ -27,9 +29,9 @@ Please, visit http://www.glyphsapp.com/ for further information.
 * **Select partial path:** Selects the partial path between the selected nodes in the current glyph — take into account that the script goes through the path starting from the first node.
 * **Select small paths:** Finds and selects small paths (smaller than a user-definable area) in the current glyph.
 * **Selection to all the backgrounds:** Replaces in all the glyphs their current content of the background with the selected paths in the current glyph.
-* **Set default figures:** Sets as default figures the set of numerals selected by the user (UI — Vanilla required). Inserts the figures as components in the ‘Decimal Digit’ cells, enables automatic alignment, and copies kerning groups.
+* **Set default figures:** UI (Vanilla required) for setting the set of numerals selected by the user as default figures. Inserts the figures as components in the ‘Decimal Digit’ cells, enables automatic alignment, and copies kerning groups.
 * **Shift background in selected glyphs:** Shifts horizontally (user-definable number) the background content in selected glyphs. Positive value for shifting to the right, negative value for shifting to the left.
-* **Start-from-scratch:** UI for deleting anchors, annotations, backgrounds, guidelines, images, kerning groups, labels, metric keys, non-master layers, and paths and components—in selected/all the glyphs, selected/all the masters, and master/all the layers.
+* **Start-from-scratch:** UI (Vanilla required) for deleting anchors, annotations, backgrounds, guidelines, images, kerning groups, labels, metric keys, non-master layers, and paths and components—in selected/all the glyphs, selected/all the masters, and master/all the layers.
 * **Tabular width checker:** Checks all selected Glyphs are on same width. It ignores ‘Auto’ and makes sure that the assigned value is equal regardless of metrics keys.
 * **Use layer as master:** Sets the current layer as the master layer.
 
