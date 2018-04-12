@@ -34,6 +34,7 @@ PS, Some of the scripts require @typesupply's Vanilla. No worries, it’s easy: 
 * **Start-from-scratch:** UI (Vanilla required) for deleting anchors, annotations, backgrounds, guidelines, images, kerning groups, labels, metric keys, non-master layers, and paths and components—in selected/all the glyphs, selected/all the masters, and master/all the layers.
 * **Tabular width checker:** Checks all selected Glyphs are on same width. It ignores ‘Auto’ and makes sure that the assigned value is equal regardless of metrics keys.
 * **Use layer as master:** Sets the current layer as the master layer.
+* **Vertical metrics reporter:** Reports if vertical metrics in all the masters in all open files are equal.
 
 # License
 
