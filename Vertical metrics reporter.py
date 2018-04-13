@@ -8,6 +8,7 @@ Reports if vertical metrics in all the masters in all open files are equal.
 import GlyphsApp
 import time
 Glyphs.clearLog()
+Glyphs.showMacroWindow()
 print "Vertical metrics reporter @ " + time.strftime("%H:%M:%S")
 
 metricKeys = {"typoAscender" : [], "typoDescender" : [], "typoLineGap" : [], "hheaAscender" : [], "hheaDescender" : [], "hheaLineGap" : [], "winDescent" : [], "winAscent" : []}
