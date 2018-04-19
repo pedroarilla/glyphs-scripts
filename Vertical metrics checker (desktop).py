@@ -1,4 +1,4 @@
-#MenuTitle: Vertical metrics checker
+#MenuTitle: Vertical metrics checker (desktop)
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
 __doc__="""
@@ -9,7 +9,7 @@ import GlyphsApp
 import time
 Glyphs.clearLog()
 Glyphs.showMacroWindow()
-print "Vertical metrics checker @ " + time.strftime("%H:%M:%S")
+print "Vertical metrics checker (desktop) @ " + time.strftime("%H:%M:%S")
 
 thisFont = Glyphs.font
 yep = "\U00002705"
@@ -29,7 +29,7 @@ try:
             print "\t\t" + nope.decode('unicode-escape') + " " + master.name
 
     # 2nd test
-    print "\t# 2nd test: sum[typo_values] = win_values"
+    print "\t# 2nd test: sum[typo_values] = sum[win_values]"
     for master in thisFont.masters:
         if abs(master.customParameters["typoAscender"]) + abs(master.customParameters["typoDescender"]) + abs(master.customParameters["typoLineGap"]) == total:
             print "\t\t" + yep.decode('unicode-escape') + " " + master.name
