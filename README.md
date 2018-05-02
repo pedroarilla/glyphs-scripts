@@ -14,6 +14,7 @@ PS, Some of the scripts require @typesupply's Vanilla. No worries, it’s easy: 
 * **Clear background in all layers:** Clears the background in all layers (masters and copies) in all glyphs.
 * **Clear background in all master layers:** Clears the background in all master layers in all glyphs.
 * **Decompose all corner components:** Decomposes all corner components in selected glyphs.
+* **Decompose all serif components:** Decomposes all serif components in selected glyphs.
 * **Delete annotations in all layers:** Deletes all annotations in all layers (masters and copies) in all glyphs.
 * **Delete annotations in all master layers:** Deletes all annotations in all master layers in all glyphs.
 * **Display next layer:** Switches to the next layer of the current glyph within the current master.
