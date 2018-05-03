@@ -3,7 +3,7 @@
 # Based on _Select Different Color_ by Rainer Erich Scheichelbauer (@mekkablue)
 # Modified by Pedro Arilla
 __doc__="""
-In Font view, selects glyphs with a different colour as the currently selected one(s).
+In Font view, selects glyphs with a different colour(s) as the currently selected one(s).
 """
 
 import GlyphsApp

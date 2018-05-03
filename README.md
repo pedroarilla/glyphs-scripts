@@ -27,7 +27,7 @@ PS, Some of the scripts require @typesupply's Vanilla. No worries, it’s easy: 
 * **New tab with random UC non-text:** Opens a new tab and outputs random uppercase non-text.
 * **New tabs with KernKing text:** Opens two new edit tabs and outputs KernKing text.
 * **Scale background in selected glyphs:** Scales proportionally (user-definable percentage) the background content in selected glyphs.
-* **Select different colour:** In Font view, selects glyphs with a different colour as the currently selected one(s).
+* **Select different colour:** In Font view, selects glyphs with a different colour(s) as the currently selected one(s).
 * **Select partial path:** Selects the partial path between the selected nodes in the current glyph — take into account that the script goes through the path starting from the first node.
 * **Select small paths:** Finds and selects small paths (smaller than a user-definable area) in the current glyph.
 * **Selection to all the backgrounds:** Replaces in all the glyphs their current content of the background with the selected paths in the current glyph.
