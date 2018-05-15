@@ -29,6 +29,7 @@ PS, Some of the scripts require @typesupply's Vanilla. No worries, it’s easy: 
 * **Scale background in selected glyphs:** Scales proportionally (user-definable percentage) the background content in selected glyphs.
 * **Select different colour:** In Font view, selects glyphs with a different colour(s) as the currently selected one(s).
 * **Select partial path:** Selects the partial path between the selected nodes in the current glyph — take into account that the script goes through the path starting from the first node.
+* **Select paths:** Selects the path or paths you are working on—according to the selected nodes.
 * **Select small paths:** Finds and selects small paths (smaller than a user-definable area) in the current glyph.
 * **Selection to all the backgrounds:** Replaces in all the glyphs their current content of the background with the selected paths in the current glyph.
 * **Set default figures:** UI (Vanilla required) for setting the set of numerals selected by the user as default figures. Inserts the figures as components in the ‘Decimal Digit’ cells, enables automatic alignment, and copies kerning groups.
