@@ -34,6 +34,7 @@ PS, Some of the scripts require @typesupply's Vanilla. No worries, it’s easy: 
 * **Selection to all the backgrounds:** Replaces in all the glyphs their current content of the background with the selected paths in the current glyph.
 * **Set default figures:** UI (Vanilla required) for setting the set of numerals selected by the user as default figures. Inserts the figures as components in the ‘Decimal Digit’ cells, enables automatic alignment, and copies kerning groups.
 * **Shift background in selected glyphs:** Shifts horizontally (user-definable number) the background content in selected glyphs. Positive value for shifting to the right, negative value for shifting to the left.
+* **Simplify selection:** Simplifies the selected path(s) by deleting one of every two nodes.
 * **Start-from-scratch:** UI (Vanilla required) for deleting anchors, annotations, backgrounds, guidelines, images, kerning groups, labels, metric keys, non-master layers, and paths and components—in selected/all the glyphs, selected/all the masters, and master/all the layers.
 * **Tabular width checker:** Checks all selected Glyphs are on same width. It ignores ‘Auto’ and makes sure that the assigned value is equal regardless of metrics keys.
 * **Use layer as master:** Sets the current layer as the master layer.
