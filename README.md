@@ -22,8 +22,11 @@ PS, Some of the scripts require @typesupply's Vanilla. No worries, it’s easy: 
 * **Duplicate current layer:** Duplicates the current layer as a normal glyph layer.
 * **Make component glyph for all masters:** Builds compound glyphs in the selected ones for all masters.
 * **Make lower-unicase font:** Makes a lower-unicase font placing the lowercase glyphs (as components) in the uppercasse cells.
-* **New tab with random LC non-text:** Opens a new tab and outputs random lowercase non-text.
-* **New tab with random title non-text:** Opens a new tab and outputs random title non-text.
+* **New tab with glyphs between figures:** Opens a new tab and outputs selected glyph(s) between figures 0–9.
+* **New tab with glyphs between lc:** Opens a new tab and outputs selected glyph(s) between lowercase a–z.
+* **New tab with glyphs between UC:** Opens a new tab and outputs selected glyph(s) between uppercase A–Z.
+* **New tab with random lc non-text:** Opens a new tab and outputs random lowercase non-text.
+* **New tab with random Title non-text:** Opens a new tab and outputs random title non-text.
 * **New tab with random UC non-text:** Opens a new tab and outputs random uppercase non-text.
 * **New tabs with KernKing text:** Opens two new edit tabs and outputs KernKing text.
 * **Scale background in selected glyphs:** Scales proportionally (user-definable percentage) the background content in selected glyphs.
