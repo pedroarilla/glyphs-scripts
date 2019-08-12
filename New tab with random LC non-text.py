@@ -1,4 +1,4 @@
-#MenuTitle: New tab with random LC non-text
+#MenuTitle: New tab with random lc non-text
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
 __doc__="""
@@ -9,9 +9,9 @@ import GlyphsApp
 import time
 import random
 Glyphs.clearLog()
-print "New tab with random LC non-text @ " + time.strftime("%H:%M:%S")
+print "New tab with random lc non-text @ " + time.strftime("%H:%M:%S")
 
-abecedary = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "x", "y", "z"]
+abecedary = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 divisors = [3, 5, 7]
 words = ""
 
@@ -21,4 +21,4 @@ for i in range(700):
         words = words + " "
 Font.newTab(words)
 
-print "Tab with random LC non-text opened."
+print "Tab with random lc non-text opened."
