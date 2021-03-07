@@ -23,7 +23,8 @@ PS, Some of the scripts require @typesupply's Vanilla. No worries, it’s easy: 
 * **Duplicate current layer:** Duplicates the current layer as a normal glyph layer.
 * **Make component glyph for all masters:** Builds compound glyphs in the selected ones for all masters.
 * **Make lower-unicase font:** Makes a lower-unicase font placing the lowercase glyphs (as components) in the uppercasse cells.
-* **Make zero handles:** Makes zero-length all handles (overlapping nodes) in selected glyphs.
+* **Make zero handles selected glyphs:** Makes zero-length all handles (overlapping nodes) in selected glyphs.
+* **Make zero handles selected nodes:** Makes zero-length all handles (overlapping nodes) in selected nodes.
 * **New tab with glyphs between figures:** Opens a new tab and outputs selected glyph(s) between figures 0–9.
 * **New tab with glyphs between lc:** Opens a new tab and outputs selected glyph(s) between lowercase a–z.
 * **New tab with glyphs between UC:** Opens a new tab and outputs selected glyph(s) between uppercase A–Z.

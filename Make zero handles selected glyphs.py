@@ -1,4 +1,4 @@
-#MenuTitle: Make zero-handles
+#MenuTitle: Make zero-handles selected glyphs
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
 __doc__="""
@@ -31,4 +31,4 @@ for thisLayer in thisFont.selectedLayers:
                 previous = True
             i += 1
 thisFont.enableUpdateInterface()
-print "Zero-handles nodes made."
+print "Zero-handles nodes made in selected glyphs."
