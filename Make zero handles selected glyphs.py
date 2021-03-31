@@ -8,7 +8,7 @@ Makes zero-length all handles (overlapping nodes) in selected glyphs.
 import GlyphsApp
 import time
 Glyphs.clearLog()
-print "Make zero-handles @ " + time.strftime("%H:%M:%S")
+print "Make zero-handles selected glyphs @ " + time.strftime("%H:%M:%S")
 
 i = 0
 previous = True
