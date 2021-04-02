@@ -11,7 +11,6 @@ Please, visit http://www.glyphsapp.com/ for further information.
 PS, Some of the scripts require @typesupply's Vanilla. No worries, it’s easy: go to the *Glyphs* menu, *Preferences*, *Addons*, *Modules*, and finally click on  *Install Modules*. Done!
 
 # ABOUT THE SCRIPTS
-* **Builder Masters Custom Parameter:** Sets vertical metrics (win, typo, and hhea values) and strokes (strikeout and underline) across masters.
 * **Clear background in all layers:** Clears the background in all layers (masters and copies) in all glyphs.
 * **Clear background in all master layers:** Clears the background in all master layers in all glyphs.
 * **Decompose all corner components:** Decomposes all corner components in selected glyphs.
