@@ -1,13 +1,12 @@
 #MenuTitle: Start-from-scratch
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
+from __future__ import division, print_function, unicode_literals
 __doc__="""
 UI (Vanilla required) for deleting anchors, annotations, backgrounds, guidelines, images, kerning groups, labels, metric keys, non-master layers, and paths and components—in selected/all the glyphs, selected/all the masters, and master/all the layers.
 """
 
-import GlyphsApp
-import time
-import vanilla
+import GlyphsApp, time, vanilla
 
 class startFromScratch( object ):
 	def __init__( self ):
@@ -51,7 +50,7 @@ class startFromScratch( object ):
 
 		# Load Settings:
 		if not self.LoadPreferences():
-			print "Note: 'Start-from-scratch' could not load preferences. Will resort to defaults"
+			print("Note: 'Start-from-scratch' could not load preferences. Will resort to defaults")
 
 		# Open window and focus on it:
 		self.w.open()
@@ -163,6 +162,7 @@ class startFromScratch( object ):
 	def cleanPaths( self, listOfLayers ):
 		try:
 			for layer in listOfLayers:
+				print(layer)
 				layer.setPaths_( None )
 				layer.setComponents_( None )
 			return True
@@ -259,7 +259,7 @@ class startFromScratch( object ):
 		try:
 			Glyphs.clearLog()
 			Glyphs.showMacroWindow()
-			print "Start-from-scratch @ " + time.strftime("%H:%M:%S") + "\n"
+			print("Start-from-scratch @ " + time.strftime("%H:%M:%S") + "\n")
 
 			thisFont = Glyphs.font
 			listOfGlyphs = []
@@ -270,72 +270,72 @@ class startFromScratch( object ):
 			# User selection:
 			# Playground:
 			if Glyphs.defaults["com.pedroarilla.StartFromScratch.applyToGlyphs"] == 0:
-				print "\tGetting selected glyphs..."
+				print("\tGetting selected glyphs...")
 				listOfGlyphs = self.selectedGlyphs( thisFont, listOfGlyphs )
 			else:
-				print "\tGetting all the glyphs in font..."
+				print("\tGetting all the glyphs in font...")
 				listOfGlyphs = self.allGlyphs( thisFont, listOfGlyphs )
 			if Glyphs.defaults["com.pedroarilla.StartFromScratch.applyToMasters"] == 0:
-				print "\tSelecting active master..."
+				print("\tSelecting active master...")
 				thisFontMasterID = thisFont.selectedLayers[0].associatedFontMaster().id
 				listOfMasters = self.activeMaster( listOfGlyphs, listOfMasters, thisFontMasterID )
 			else:
-				print "\tSelecting all the masters..."
+				print("\tSelecting all the masters...")
 				listOfMasters = self.allMasters( listOfGlyphs, listOfMasters )
 			if Glyphs.defaults["com.pedroarilla.StartFromScratch.applyToLayers"] == 0:
-				print "\tPicking master layers..."
+				print("\tPicking master layers...")
 				listOfLayers = self.masterLayers( listOfMasters, listOfLayers )
 			else:
-				print "\tPicking all the layers..."
+				print("\tPicking all the layers...")
 				listOfLayers = listOfMasters
 
 			# Playbook:
 			if Glyphs.defaults["com.pedroarilla.StartFromScratch.cleanAnchors"]:
-				print "\tDeleting anchors..."
+				print("\tDeleting anchors...")
 				self.cleanAnchors( listOfLayers )
 			if Glyphs.defaults["com.pedroarilla.StartFromScratch.cleanAnnotations"]:
-				print "\tDeleting annotations..."
+				print("\tDeleting annotations...")
 				self.cleanAnnotations( listOfLayers )
 			if Glyphs.defaults["com.pedroarilla.StartFromScratch.cleanBackgrounds"]:
-				print "\tCleaning backgrounds..."
+				print("\tCleaning backgrounds...")
 				self.cleanBackgrounds( listOfLayers )
 			if Glyphs.defaults["com.pedroarilla.StartFromScratch.cleanGuidelines"]:
-				print "\tDeleting guidelines..."
+				print("\tDeleting guidelines...")
 				self.cleanGuidelines( thisFont, listOfLayers )
 			if Glyphs.defaults["com.pedroarilla.StartFromScratch.cleanImages"]:
-				print "\tDeleting images..."
+				print("\tDeleting images...")
 				self.cleanImages( listOfLayers )
 			if Glyphs.defaults["com.pedroarilla.StartFromScratch.cleanKerning"]:
-				print "\tCleaning kerning groups..."
+				print("\tCleaning kerning groups...")
 				self.cleanKerning( listOfGlyphs )
 			if Glyphs.defaults["com.pedroarilla.StartFromScratch.cleanLabels"]:
-				print "\tCleaning labels..."
+				print("\tCleaning labels...")
 				self.cleanLabels( listOfGlyphs )
 			if Glyphs.defaults["com.pedroarilla.StartFromScratch.cleanMetrics"]:
-				print "\tCleaning metric keys..."
+				print("\tCleaning metric keys...")
 				self.cleanMetrics( listOfGlyphs )
 			if Glyphs.defaults["com.pedroarilla.StartFromScratch.cleanLayers"]:
-				print "\tDeleting non-master layers..."
+				print("\tDeleting non-master layers...")
 				self.cleanLayers( listOfMasters )
 			if Glyphs.defaults["com.pedroarilla.StartFromScratch.cleanPaths"]:
-				print "\tDeleting paths and components..."
+				print("\tDeleting paths and components...")
 				self.cleanPaths( listOfLayers )
 
 			thisFont.enableUpdateInterface()
-			print "\nNow you can start from scratch! :)"
+			print("\nNow you can start from scratch! :)")
 
 			if not self.SavePreferences( self ):
-				print "Note: 'Start-from-scratch' could not write preferences."
+				print("Note: 'Start-from-scratch' could not write preferences.")
 
 			self.w.close() # delete if you want window to stay open
 
-		except Exception, e:
+		except Exception as e:
 			# brings macro window to front and reports error:
 			Glyphs.clearLog()
-			print "Start-from-scratch @ " + time.strftime("%H:%M:%S")
+			print("Start-from-scratch @ " + time.strftime("%H:%M:%S"))
 			Glyphs.showMacroWindow()
-			print "Start-from-scratch Error: %s" % e
+			print("Start-from-scratch Error: %s" % e)
 			import traceback
-			print traceback.format_exc()
+			print(traceback.format_exc())
 
 startFromScratch()

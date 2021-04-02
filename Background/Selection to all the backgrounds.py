@@ -1,17 +1,14 @@
 #MenuTitle: Selection to all the backgrounds
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
+from __future__ import division, print_function, unicode_literals
 __doc__="""
 Replaces in all the glyphs their current content of the background with the selected paths of the current glyph.
-
-Recommended keyboard shortcut: Cmd+Shift+J
-[via Mac OS System Preferences > Keyboard > Shortcuts > App Shortcuts > Glyphs.app]
 """
 
-import GlyphsApp
-import time
+import GlyphsApp, time
 Glyphs.clearLog()
-print "Selection to all the backgrounds @ " + time.strftime("%H:%M:%S")
+print("Selection to all the backgrounds @ " + time.strftime("%H:%M:%S"))
 
 thisFont = Glyphs.font
 thisFont.disableUpdateInterface()
@@ -24,4 +21,4 @@ for glyph in thisFont.glyphs:
 	glyph.layers[thisFont.selectedFontMaster.id].setBackground_( currentLayer.background )
 thisFont.enableUpdateInterface()
 
-print "Global background assigned."
+print("Global background assigned.")
