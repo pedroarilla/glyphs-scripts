@@ -1,13 +1,12 @@
 #MenuTitle: Set default figures
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
+from __future__ import division, print_function, unicode_literals
 __doc__="""
 UI (Vanilla required) for setting the set of numerals selected by the user as default figures. Inserts the figures as components in the ‘Decimal Digit’ cells, enables automatic alignment, and copies kerning groups.
 """
 
-import GlyphsApp
-import time
-import vanilla
+import GlyphsApp, time, vanilla
 
 class setDefaultFigures( object ):
 	def __init__( self ):
@@ -33,7 +32,7 @@ class setDefaultFigures( object ):
 
 		# Load Settings:
 		if not self.LoadPreferences():
-			print "Note: 'Set default figures' could not load preferences. Will resort to defaults"
+			print("Note: 'Set default figures' could not load preferences. Will resort to defaults")
 
 		# Open window and focus on it:
 		self.w.open()
@@ -61,7 +60,7 @@ class setDefaultFigures( object ):
 	def setDefaultFiguresMain( self, sender ):
 		try:
 			Glyphs.clearLog()
-			print "Set default figures @ " + time.strftime("%H:%M:%S")
+			print("Set default figures @ " + time.strftime("%H:%M:%S"))
 			thisFont = Glyphs.font
 			defaultFigures = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 			liningFigures = ["zero.lf", "one.lf", "two.lf", "three.lf", "four.lf", "five.lf", "six.lf", "seven.lf", "eight.lf", "nine.lf"]
@@ -91,20 +90,20 @@ class setDefaultFigures( object ):
 				targetNumber.leftKerningGroup = sourceNumber.leftKerningGroup
 				targetNumber.rightKerningGroup = sourceNumber.rightKerningGroup
 
-			print "Default figures set succesfully."
+			print("Default figures set succesfully.")
 
 			if not self.SavePreferences( self ):
-				print "Note: 'Set default figures' could not write preferences."
+				print("Note: 'Set default figures' could not write preferences.")
 
 			self.w.close() # delete if you want window to stay open
 
-		except Exception, e:
+		except Exception as e:
 			# brings macro window to front and reports error:
 			Glyphs.clearLog()
-			print "Set default figures @ " + time.strftime("%H:%M:%S")
+			print("Set default figures @ " + time.strftime("%H:%M:%S"))
 			Glyphs.showMacroWindow()
-			print "Set default figures Error: %s" % e
+			print("Set default figures Error: %s" % e)
 			import traceback
-			print traceback.format_exc()
+			print(traceback.format_exc())
 
 setDefaultFigures()

@@ -20,7 +20,6 @@ PS, Some of the scripts require @typesupply's Vanilla. No worries, it’s easy: 
 * **Display next layer:** Switches to the next layer of the current glyph within the current master.
 * **Display previous layer:** Switches to the previous layer of the current glyph within the current master.
 * **Duplicate current layer:** Duplicates the current layer as a normal glyph layer.
-* **Kerning cleaner:** Removes every kerning pair in the current master between -9 and 9, and rounds the others to base 5.
 * **Make component glyph for all masters:** Builds compound glyphs in the selected ones for all masters.
 * **Make lower-unicase font:** Makes a lower-unicase font placing the lowercase glyphs (as components) in the uppercasse cells.
 * **Make zero handles selected glyphs:** Makes zero-length all handles (overlapping nodes) in selected glyphs.

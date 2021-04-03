@@ -2,14 +2,14 @@
 # -*- coding: utf-8 -*-
 # Based on _Select Different Color_ by Rainer Erich Scheichelbauer (@mekkablue)
 # Modified by Pedro Arilla
+from __future__ import division, print_function, unicode_literals
 __doc__="""
 In Font view, selects glyphs with a different colour(s) as the currently selected one(s).
 """
 
-import GlyphsApp
-import time
+import GlyphsApp, time
 Glyphs.clearLog()
-print "Select different colour @ " + time.strftime("%H:%M:%S")
+print("Select different colour @ " + time.strftime("%H:%M:%S"))
 
 from AppKit import NSIndexSet
 
@@ -37,4 +37,4 @@ if displayedGlyphsInFontView:
 			if not displayedGlyphsInFontView[i].colorIndex() in colorIndexes:
 				fontView.addSelectionIndexes_( indexSetWithIndex(i) )
 
-print "Select different colour."
+print("Different colour selected.")

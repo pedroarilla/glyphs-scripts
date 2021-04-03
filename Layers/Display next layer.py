@@ -1,17 +1,14 @@
 #MenuTitle: Display next layer
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
+from __future__ import division, print_function, unicode_literals
 __doc__="""
 Switches to the next layer of the current glyph within the current master.
-
-Recommended keyboard shortcut: Ctrl+DownArrow
-[via Mac OS System Preferences > Keyboard > Shortcuts > App Shortcuts > Glyphs.app]
 """
 
-import GlyphsApp
-import time
+import GlyphsApp, time
 Glyphs.clearLog()
-print "Display next layer @ " + time.strftime("%H:%M:%S")
+print("Display next layer @ " + time.strftime("%H:%M:%S"))
 
 layersList = []
 thisFont = Glyphs.font
@@ -48,4 +45,4 @@ if thisFont and currentTab:
 			singleChar = NSAttributedString.alloc().initWithString_attributes_( unichr(char), { "GSLayerIdAttrib" : layer.layerId } )
 		string.appendAttributedString_( singleChar )
 	currentTab.layers._owner.graphicView().textStorage().setText_(string)
-print "Next layer active."
+print("Next layer active.")

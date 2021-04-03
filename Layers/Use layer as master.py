@@ -1,17 +1,14 @@
 #MenuTitle: Use layer as master
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
+from __future__ import division, print_function, unicode_literals
 __doc__="""
 Sets the current layer as the master layer.
-
-Recommended keyboard shortcut: Ctrl+Shift+M
-[via Mac OS System Preferences > Keyboard > Shortcuts > App Shortcuts > Glyphs.app]
 """
 
-import GlyphsApp
-import time
+import GlyphsApp, time
 Glyphs.clearLog()
-print "Use layer as master @ " + time.strftime("%H:%M:%S")
+print("Use layer as master @ " + time.strftime("%H:%M:%S"))
 
 thisFont = Glyphs.font
 thisLayer = thisFont.selectedLayers[0]
@@ -44,5 +41,5 @@ if not thisLayer.layerId == thisLayer.associatedMasterId:
 	del thisGlyph.layers[thisLayer.layerId]
 	thisGlyph.endUndo()
 	thisFont.enableUpdateInterface()
-	print "Layer set as master."
-else: print "Error: current layer is the master layer."
+	print("Layer set as master.")
+else: print("Error: current layer is already the master layer.")
