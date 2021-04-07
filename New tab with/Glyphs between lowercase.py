@@ -1,18 +1,18 @@
-#MenuTitle: New tab with glyphs between UC
+#MenuTitle: Glyphs between lowercase
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
 from __future__ import division, print_function, unicode_literals
 __doc__="""
-Opens a new tab and outputs selected glyph(s) between uppercase A-Z.
+Opens a new tab and outputs selected glyph(s) between lowercase a-z.
 """
 
 import GlyphsApp, time, random
 Glyphs.clearLog()
-print("New tab with glyp(s) between UC @ " + time.strftime("%H:%M:%S"))
+print("New tab with glyp(s) between lowercase @ " + time.strftime("%H:%M:%S"))
 
 thisFont = Glyphs.font
 selectedLayers = thisFont.selectedLayers
-abecedary = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+abecedary = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 tabString = ""
 
 for n in selectedLayers:
@@ -23,4 +23,4 @@ for n in selectedLayers:
 
 thisFont.newTab(tabString)
 
-print("Tab with glyph(s) between UC opened.")
+print("Tab with glyph(s) between lowercase opened.")

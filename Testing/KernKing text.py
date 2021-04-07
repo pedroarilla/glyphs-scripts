@@ -1,4 +1,4 @@
-#MenuTitle: New tabs with KernKing text
+#MenuTitle: KernKing text
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
 # Thanks to KernKing: http://logofontandlettering.com/kernking.html

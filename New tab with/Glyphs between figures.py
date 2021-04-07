@@ -1,4 +1,4 @@
-#MenuTitle: New tab with glyphs between figures
+#MenuTitle: Glyphs between figures
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
 from __future__ import division, print_function, unicode_literals
