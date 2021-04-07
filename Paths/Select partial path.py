@@ -1,6 +1,7 @@
 #MenuTitle: Select partial path
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
+from __future__ import division, print_function, unicode_literals
 __doc__="""
 Selects the partial path between the selected nodes in the current glyph — take into account that the script goes through the path starting from the first node.
 
@@ -11,7 +12,7 @@ Recommended keyboard shortcut: Cmd+Ctrl+A
 import GlyphsApp
 import time
 Glyphs.clearLog()
-print "Select partial path @ " + time.strftime("%H:%M:%S")
+print("Select partial path @ " + time.strftime("%H:%M:%S"))
 
 thisFont = Glyphs.font
 currentLayer = thisFont.selectedLayers[0]
@@ -29,4 +30,4 @@ for path in currentLayer.paths:
 currentGlyph.endUndo()
 thisFont.enableUpdateInterface()
 
-print "Partial path selected."
+print("Partial path selected.")

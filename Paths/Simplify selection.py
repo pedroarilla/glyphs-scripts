@@ -1,6 +1,7 @@
 #MenuTitle: Simplify selection
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
+from __future__ import division, print_function, unicode_literals
 __doc__="""
 Simplifies the selected path(s) by deleting one of every two nodes.
 """
@@ -8,7 +9,7 @@ Simplifies the selected path(s) by deleting one of every two nodes.
 import GlyphsApp
 import time
 Glyphs.clearLog()
-print "Simplify selection @ " + time.strftime("%H:%M:%S")
+print("Simplify selection @ " + time.strftime("%H:%M:%S"))
 
 thisFont = Glyphs.font
 selection = thisFont.selectedLayers[0].selection
@@ -20,4 +21,4 @@ for thisNode in selection:
     delete = not delete
 thisFont.enableUpdateInterface()
 
-print "Path(s) simplified."
+print("Path(s) simplified.")

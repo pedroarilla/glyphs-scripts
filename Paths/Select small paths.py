@@ -1,6 +1,7 @@
 #MenuTitle: Select small paths
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
+from __future__ import division, print_function, unicode_literals
 __doc__="""
 Finds and selects small paths (smaller than a user-definable area) in the current glyph.
 """
@@ -9,7 +10,7 @@ import GlyphsApp
 from robofab.interface.all.dialogs import AskString
 import time
 Glyphs.clearLog()
-print "Select small paths @ " + time.strftime("%H:%M:%S")
+print("Select small paths @ " + time.strftime("%H:%M:%S"))
 
 def is_a_number(number):
     try:
@@ -21,7 +22,7 @@ def is_a_number(number):
 minArea = AskString("Select paths with an area smaller than (in square units)")
 if not is_a_number(minArea):
 	Glyphs.showMacroWindow()
-	print "Error: Not a number"
+	print("Error: Not a number")
 else:
 	minArea = float(minArea)
 	pathCounter = 0
@@ -38,4 +39,4 @@ else:
 			pathCounter += 1
 	currentGlyph.endUndo()
 	thisFont.enableUpdateInterface()
-	print "%i paths selected." % pathCounter
+	print("%i paths selected." % pathCounter)

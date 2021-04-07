@@ -1,6 +1,7 @@
 #MenuTitle: Make zero-handles selected nodes
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
+from __future__ import division, print_function, unicode_literals
 __doc__="""
 Makes zero-length all handles (overlapping nodes) in selected nodes.
 """
@@ -8,7 +9,7 @@ Makes zero-length all handles (overlapping nodes) in selected nodes.
 import GlyphsApp
 import time
 Glyphs.clearLog()
-print "Make zero-handles selected nodes @ " + time.strftime("%H:%M:%S")
+print("Make zero-handles selected nodes @ " + time.strftime("%H:%M:%S"))
 
 i = 0
 thisFont = Glyphs.font
@@ -28,4 +29,4 @@ for thisPath in thisLayer.paths:
                     thisPath.nodes[after].y = thisPath.nodes[i].y
         i += 1
 thisFont.enableUpdateInterface()
-print "Zero-handles nodes made in selected nodes."
+print("Zero-handles nodes made in selected nodes.")

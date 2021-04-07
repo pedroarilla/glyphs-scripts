@@ -1,6 +1,7 @@
 #MenuTitle: Select paths
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
+from __future__ import division, print_function, unicode_literals
 __doc__="""
 Selects the path or paths you are working on—according to the selected nodes.
 
@@ -11,7 +12,7 @@ Recommended keyboard shortcut: Cmd+Shift+A
 import GlyphsApp
 import time
 Glyphs.clearLog()
-print "Select paths @ " + time.strftime("%H:%M:%S")
+print("Select paths @ " + time.strftime("%H:%M:%S"))
 
 thisFont = Glyphs.font
 currentLayer = thisFont.selectedLayers[0]
@@ -30,4 +31,4 @@ for path in currentLayer.paths:
 currentGlyph.endUndo()
 thisFont.enableUpdateInterface()
 
-print "Paths selected."
+print("Paths selected.")
