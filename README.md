@@ -25,12 +25,17 @@ PS, Some of the scripts require @typesupply's Vanilla. No worries, it’s easy: 
 * **Make zero handles selected glyphs:** Makes zero-length all handles (overlapping nodes) in selected glyphs.
 * **Make zero handles selected nodes:** Makes zero-length all handles (overlapping nodes) in selected nodes.
 * **New tab with glyphs between figures:** Opens a new tab and outputs selected glyph(s) between figures 0–9.
-* **New tab with glyphs between lc:** Opens a new tab and outputs selected glyph(s) between lowercase a–z.
-* **New tab with glyphs between UC:** Opens a new tab and outputs selected glyph(s) between uppercase A–Z.
-* **New tab with random lc non-text:** Opens a new tab and outputs random lowercase non-text.
+* **New tab with glyphs between lowercase:** Opens a new tab and outputs selected glyph(s) between lowercase a–z.
+* **New tab with glyphs between UPPERCASE:** Opens a new tab and outputs selected glyph(s) between uppercase A–Z.
+* **New tab with glyphs surrounded by HHOHH:** Opens a new tab and outputs selected glyph(s) surrounded by HHOHH string.
+* **New tab with glyphs surrounded by I:** Opens a new tab and outputs selected glyph(s) surrounded by I string.
+* **New tab with glyphs surrounded by nnonn:** Opens a new tab and outputs selected glyph(s) surrounded by nnonn string.
+* **New tab with random lowercase non-text:** Opens a new tab and outputs random lowercase non-text.
+* **New tab with random lowercase words:** Opens a new tab and outputs random lowercase words sorted alphabetically.
 * **New tab with random Title non-text:** Opens a new tab and outputs random title non-text.
-* **New tab with random UC non-text:** Opens a new tab and outputs random uppercase non-text.
-* **New tab with random words:** Opens a new tab and outputs random words (UC, Title, uc) sorted alphabetically..
+* **New tab with random Title words:** Opens a new tab and outputs random title words sorted alphabetically.
+* **New tab with random UPPERCASE non-text:** Opens a new tab and outputs random uppercase non-text.
+* **New tab with random UPPERCASE words:** Opens a new tab and outputs random uppercase words sorted alphabetically.
 * **New tabs with KernKing text:** Opens two new edit tabs and outputs KernKing text.
 * **Scale background in selected glyphs:** Scales proportionally (user-definable percentage) the background content in selected glyphs.
 * **Select different colour:** In Font view, selects glyphs with a different colour(s) as the currently selected one(s).
