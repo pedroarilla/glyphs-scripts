@@ -7,8 +7,7 @@ __doc__="""
 Opens two new edit tabs and outputs KernKing text.
 """
 
-import GlyphsApp
-import time
+import GlyphsApp, time
 Glyphs.clearLog()
 print("New tabs with KernKing text @ " + time.strftime("%H:%M:%S"))
 

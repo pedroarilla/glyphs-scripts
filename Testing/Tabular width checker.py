@@ -8,8 +8,7 @@ Checks all selected Glyphs are on same width. It ignores ‘Auto’ and makes su
 Note: The glyph selected firstly sets the *master width*.
 """
 
-import GlyphsApp
-import time
+import GlyphsApp, time
 Glyphs.clearLog()
 Glyphs.showMacroWindow()
 print("Tabular width checker @ " + time.strftime("%H:%M:%S"))
@@ -19,15 +18,13 @@ selectedLayers = thisFont.selectedLayers
 masterWidth = selectedLayers[0].width
 sameWidthCounter = 0
 differentWidthCounter = 0
-yep = "\U00002705"
-nope = "\U0000274C"
 for layer in selectedLayers:
 	width = layer.width
 	if width == masterWidth:
-		print "\t" + yep.decode('unicode-escape') + " " + layer.parent.name + " (%i)" % width
+		print("\t✅ " + layer.parent.name + " (%i)" % width)
 		sameWidthCounter += 1
 	else:
-		print "\t" + nope.decode('unicode-escape') + " " + layer.parent.name + " (%i)" % width
+		print("\t❌ " + layer.parent.name + " (%i)" % width)
 		differentWidthCounter += 1
 print("Result:")
 print("%i glyphs are on same width." % sameWidthCounter)

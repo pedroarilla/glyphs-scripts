@@ -9,8 +9,7 @@ Recommended keyboard shortcut: Cmd+Shift+A
 [via Mac OS System Preferences > Keyboard > Shortcuts > App Shortcuts > Glyphs.app]
 """
 
-import GlyphsApp
-import time
+import GlyphsApp, time
 Glyphs.clearLog()
 print("Select paths @ " + time.strftime("%H:%M:%S"))
 

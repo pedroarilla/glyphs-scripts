@@ -6,9 +6,7 @@ __doc__="""
 Opens a new tab and outputs random Title non-text.
 """
 
-import GlyphsApp
-import time
-import random
+import GlyphsApp, time, random
 Glyphs.clearLog()
 print("New tab with random Title non-text @ " + time.strftime("%H:%M:%S"))
 

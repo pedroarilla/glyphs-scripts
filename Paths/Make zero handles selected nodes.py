@@ -6,8 +6,7 @@ __doc__="""
 Makes zero-length all handles (overlapping nodes) in selected nodes.
 """
 
-import GlyphsApp
-import time
+import GlyphsApp, time
 Glyphs.clearLog()
 print("Make zero-handles selected nodes @ " + time.strftime("%H:%M:%S"))
 

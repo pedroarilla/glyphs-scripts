@@ -6,9 +6,8 @@ __doc__="""
 Finds and selects small paths (smaller than a user-definable area) in the current glyph.
 """
 
-import GlyphsApp
+import GlyphsApp, time
 from robofab.interface.all.dialogs import AskString
-import time
 Glyphs.clearLog()
 print("Select small paths @ " + time.strftime("%H:%M:%S"))
 

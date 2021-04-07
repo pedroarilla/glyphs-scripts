@@ -6,8 +6,7 @@ __doc__="""
 Simplifies the selected path(s) by deleting one of every two nodes.
 """
 
-import GlyphsApp
-import time
+import GlyphsApp, time
 Glyphs.clearLog()
 print("Simplify selection @ " + time.strftime("%H:%M:%S"))
 
