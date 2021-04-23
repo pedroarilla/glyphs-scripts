@@ -37,6 +37,7 @@ PS, Some of the scripts require @typesupply's Vanilla. No worries, it’s easy: 
 * **New tab with random Title words:** Opens a new tab and outputs random title words sorted alphabetically.
 * **New tab with random UPPERCASE non-text:** Opens a new tab and outputs random uppercase non-text.
 * **New tab with random UPPERCASE words:** Opens a new tab and outputs random uppercase words sorted alphabetically.
+* **New tab with Real* Spanish text:**Opens a new tab and outputs Real* Spanish text..
 * **New tabs with KernKing text:** Opens two new edit tabs and outputs KernKing text.
 * **Scale background in selected glyphs:** Scales proportionally (user-definable percentage) the background content in selected glyphs.
 * **Select different colour:** In Font view, selects glyphs with a different colour(s) as the currently selected one(s).
