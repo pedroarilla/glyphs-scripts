@@ -1,4 +1,4 @@
-#MenuTitle: Random Title words
+#MenuTitle: Title words
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
 from __future__ import division, print_function, unicode_literals

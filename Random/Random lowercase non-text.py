@@ -1,4 +1,4 @@
-#MenuTitle: Random lowercase non-text
+#MenuTitle: lowercase non-text
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
 from __future__ import division, print_function, unicode_literals

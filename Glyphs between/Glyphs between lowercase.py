@@ -1,4 +1,4 @@
-#MenuTitle: Glyphs between lowercase
+#MenuTitle: abcdefghijk...
 # -*- coding: utf-8 -*-
 # by Pedro Arilla
 from __future__ import division, print_function, unicode_literals
