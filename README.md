@@ -30,6 +30,7 @@ PS, Some of the scripts require @typesupply's Vanilla. No worries, it’s easy: 
 * **New tab with glyphs surrounded by HHOHH:** Opens a new tab and outputs selected glyph(s) surrounded by HHOHH string.
 * **New tab with glyphs surrounded by I:** Opens a new tab and outputs selected glyph(s) surrounded by I string.
 * **New tab with glyphs surrounded by nnonn:** Opens a new tab and outputs selected glyph(s) surrounded by nnonn string.
+* **New tab with random numbers:** Opens a new tab and outputs random numbers.
 * **New tab with random lowercase non-text:** Opens a new tab and outputs random lowercase non-text.
 * **New tab with random lowercase words:** Opens a new tab and outputs random lowercase words sorted alphabetically.
 * **New tab with random Title non-text:** Opens a new tab and outputs random title non-text.
