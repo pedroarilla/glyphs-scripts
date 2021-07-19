@@ -179,7 +179,7 @@ dictionary = [
     "Figure shown not actual size. Visit amiibo.com for details on amiibo functionality.",
     "Get the digital or physical version of the game.",
     "Enter the My Nintendo Legend of Zelda™: Skyward Sword HD Sweepstakes!",
-    "Decorate your home or office with this beautiful 24"W x 14.5" acrylic panel.",
+    "Decorate your home or office with this beautiful 24W x 14.5 acrylic panel.",
     "Sweepstakes begins 10:00AM PT on 6/29/2021 and ends at 11:59PM PT on 8/1/2021.",
     "Koholint Island is full of friendly folks—and not-so-friendly monsters.",
     "Hello everyone. I’m Yoshiki Haruhana, and I worked on the graphic direction for this title. The Legend of Zelda: Link’s Awakening was first released on Game Boy™ over 20 years ago, and it’s a game that lots of people still have fond memories of playing. With that in mind, our approach of revamping the graphics was to make sure that we didn’t make them feel ‘forced’.",
