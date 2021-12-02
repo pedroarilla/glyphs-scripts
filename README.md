@@ -24,7 +24,8 @@ PS, Some of the scripts require @typesupply's Vanilla. No worries, it’s easy: 
 * **Make lower-unicase font:** Makes a lower-unicase font placing the lowercase glyphs (as components) in the uppercasse cells.
 * **Make zero handles selected glyphs:** Makes zero-length all handles (overlapping nodes) in selected glyphs.
 * **Make zero handles selected nodes:** Makes zero-length all handles (overlapping nodes) in selected nodes.
-* **New tab with glyphs between figures:** Opens a new tab and outputs selected glyph(s) between figures 0–9.
+* **New tab with glyphs between lining figures:** Opens a new tab and outputs selected glyph(s) between lining figures 0–9.
+* **New tab with glyphs between oldstyle figures:** Opens a new tab and outputs selected glyph(s) between oldstyle figures 0–9.
 * **New tab with glyphs between lowercase:** Opens a new tab and outputs selected glyph(s) between lowercase a–z.
 * **New tab with glyphs between UPPERCASE:** Opens a new tab and outputs selected glyph(s) between uppercase A–Z.
 * **New tab with glyphs surrounded by HHOHH:** Opens a new tab and outputs selected glyph(s) surrounded by HHOHH string.
